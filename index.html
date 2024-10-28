@@ -1,15 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Jevy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #ff6347;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6347;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #ff4500;
+        }
+    </style>
 </head>
 <body>
-    <h1>Steysi la mas bonitaaaa </h1>
-    <h2>Ja Papera</h2>
-    <h3>BO</h3>
-    <h4>BO</h4>
-    <h5>BO</h5>
+    <header>
+        <h1>¡Bienvenido a Super Jevy!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>En Super Jevy, hacemos que tu experiencia sea única y divertida. Nos apasiona ofrecer lo mejor para ti.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Servicio 1</li>
+            <li>Servicio 2</li>
+            <li>Servicio 3</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Super Jevy. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
